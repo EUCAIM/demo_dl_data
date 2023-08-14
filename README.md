@@ -72,7 +72,7 @@ save_ids( tst.pnm.2, "./data_ids/two_datasites_scenario/test.pnm.2_" )
 Therefore:
 
  * There are two possible scenarios: two or three data-sites available
- * Each file contains a third or a half of the full data-sets
+ * Each file contains a half or a third of the full data-sets
  * Each files contains the same variable (aka. `image_name`) with the name of the image that is included in the set
  
 ## Model description
@@ -128,6 +128,11 @@ class CnnModel( nn.Module ) :
         output = self.fc( output )
         return output
 ```
+
+This implementation is python based using:
+
+* `torch`
+* `torchvision`
 
 The model was trained in 10 epochs and using the Adam optimizer and loss of cross entropy criterion using only local CPU, and using the full set of train data-set as seen as:
 
