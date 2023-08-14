@@ -92,7 +92,7 @@ The model to test is the following:
 
 Depicted as:
 
-[https://i.ibb.co/QF0WLFm/nn.jpg]
+![CNN model drawing](https://i.ibb.co/QF0WLFm/nn.jpg)
 
 ### Ground truth
 
