@@ -13,12 +13,12 @@ The data was prepared as seen in the following R code:
 ```r
 
 # FULL LIST OF FILES - TRAIN
-trn.nrm.all <- list.files( "~/Projects/eucaim_dl_model/chest_xray/train/NORMAL/" )
-trn.pnm.all <- list.files( "~/Projects/eucaim_dl_model/chest_xray/train/PNEUMONIA/" )
+trn.nrm.all <- list.files( "./chest_xray/train/NORMAL/" )
+trn.pnm.all <- list.files( "./chest_xray/train/PNEUMONIA/" )
 
 # FULL LIST OF FILES - TEST
-tst.nrm.all <- list.files( "~/Projects/eucaim_dl_model/chest_xray/test/NORMAL/" )
-tst.pnm.all <- list.files( "~/Projects/eucaim_dl_model/chest_xray/test/PNEUMONIA/" )
+tst.nrm.all <- list.files( "./chest_xray/test/NORMAL/" )
+tst.pnm.all <- list.files( "./chest_xray/test/PNEUMONIA/" )
 
 # SPLIT IN THREE RANDOM SETS
 split <- function( files, ngroups = 3 ) {
@@ -62,11 +62,11 @@ trn.pnm.2 <- split( trn.pnm.all, 2 )
 tst.nrm.2 <- split( tst.nrm.all, 2 )
 tst.pnm.2 <- split( tst.pnm.all, 2 )
 
-save_ids( trn.nrm.2, "./data_ids/three_dataseties_scenario/train.nrm.2_" )
-save_ids( trn.pnm.2, "./data_ids/three_dataseties_scenario/train.pnm.2_" )
+save_ids( trn.nrm.2, "./data_ids/two_datasites_scenario/train.nrm.2_" )
+save_ids( trn.pnm.2, "./data_ids/two_datasites_scenario/train.pnm.2_" )
 
-save_ids( tst.nrm.2, "./data_ids/three_dataseties_scenario/test.nrm.2_" )
-save_ids( tst.pnm.2, "./data_ids/three_dataseties_scenario/test.pnm.2_" )
+save_ids( tst.nrm.2, "./data_ids/two_datasites_scenario/test.nrm.2_" )
+save_ids( tst.pnm.2, "./data_ids/two_datasites_scenario/test.pnm.2_" )
 ```
 
 Therefore:
