@@ -149,3 +149,5 @@ Epoch 8 - Loss: 1.0648583032190797
 Epoch 9 - Loss: 0.7512097196653486
 Model test accuracy: 0.7756410256410257; Model test loss: 19.418610334396362
 ```
+
+Also, for this model, I resized all pictures as `(3, 224, 224)`.
